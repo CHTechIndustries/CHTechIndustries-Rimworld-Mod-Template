@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>RimworldModTemplate</name> <!-- Replace your mod name -->
-	<author>Put Author Here</author>
-	<packageId>TdT.modID</packageId>
-	<url>https://github.com/Dynamic-Trio/Rimworld-Mod-Template</url> <!-- Replace with a website of your choice for your mod, or remove -->
-	<modVersion>1.0.5</modVersion> <!-- Replace with your version number -->
+	<name>TdTModTemplate</name> 
+	<author>The Dynamic Trio</author>
+	<packageId>TdT.</packageId> 
+	<url>https://github.com/Dynamic-Trio/TheDynamicTrio-Rimworld-Core</url> 	<!-- Remember to remove and replace with proper link-->
+	<modVersion>0.0.0</modVersion>
 	<supportedVersions>
 		<li>1.4</li> 
 	</supportedVersions>
@@ -40,17 +40,13 @@ A: Uh... sure. There might be "unintented features" that we can't guarentee to f
 		</li>
 	</modDependencies>
 	<loadAfter>
-<!-- put mods that need to load before this mod in here (such as "soft" dependencies) -->
-		<li>tdt.core</li> <!-- remove unless you are also using this mod/ still need it above  -->
-		<li>TdT.devOrder</li> <!-- keep if you plan on useing https://github.com/Dynamic-Trio/Debug-Assist so that your mod remains bellow  -->
+		<li>TdT.devOrder</li>
 	</loadAfter>
 	<loadBefore>
-<!-- apparently, even with "load at bottom", Exported Xenotype Storage always stays higher up. So, keep that in your mods (at least while using that mod) to ensure it's patches apply. And, while XML patch helper always stays low down, better safe than sory, so same thing  -->
+<!-- apparently, even with "load at bottom", Exported Xenotype Storage always seems to stay higher up. -->
 		<li>gege.exportedxenotypestoragemodfolder</li>
 		<li>smashphil.xmlpatchhelper</li>
-<!-- put mods that need to be beneath it in here  -->
 	</loadBefore>
 	<incompatibleWith>
-<!-- put mods that are incompatible in here -->
 	</incompatibleWith>
 </ModMetaData>
