@@ -2,8 +2,8 @@
 <ModMetaData>
 	<name>TdTModTemplate</name> 
 	<author>The Dynamic Trio</author>
-	<packageId>TdT.</packageId> 
-	<url>https://github.com/Dynamic-Trio/TheDynamicTrio-Rimworld-Core</url> 	<!-- Remember to remove and replace with proper link-->
+	<packageId>TdT.ModId</packageId> 
+	<url>https://github.com/Dynamic-Trio/TheDynamicTrio-Rimworld-Core</url>
 	<modVersion>0.0.0</modVersion>
 	<supportedVersions>
 		<li>1.4</li> 
@@ -43,7 +43,6 @@ A: Uh... sure. There might be "unintented features" that we can't guarentee to f
 		<li>TdT.devOrder</li>
 	</loadAfter>
 	<loadBefore>
-<!-- apparently, even with "load at bottom", Exported Xenotype Storage always seems to stay higher up. -->
 		<li>gege.exportedxenotypestoragemodfolder</li>
 		<li>smashphil.xmlpatchhelper</li>
 	</loadBefore>
